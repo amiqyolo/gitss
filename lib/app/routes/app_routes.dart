@@ -10,6 +10,7 @@ abstract class Routes {
   static const PASSWORD_OTP_VERIFICATION = _Paths.PASSWORD_OTP_VERIFICATION;
   static const CHANGE_PASSWORD = _Paths.CHANGE_PASSWORD;
   static const CHANGE_PASSWORD_SUCCESS = _Paths.CHANGE_PASSWORD_SUCCESS;
+  static const REGISTER = _Paths.REGISTER;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const PASSWORD_OTP_VERIFICATION = '/password-otp-verification';
   static const CHANGE_PASSWORD = '/change-password';
   static const CHANGE_PASSWORD_SUCCESS = '/change-password-success';
+  static const REGISTER = '/register';
 }
