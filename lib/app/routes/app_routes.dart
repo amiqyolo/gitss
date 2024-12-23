@@ -13,6 +13,7 @@ abstract class Routes {
   static const REGISTER = _Paths.REGISTER;
   static const REGISTER_OTP_VERIFICATION = _Paths.REGISTER_OTP_VERIFICATION;
   static const REGISTER_SUCCESS = _Paths.REGISTER_SUCCESS;
+  static const INSPECTION_RESULT = _Paths.INSPECTION_RESULT;
 }
 
 abstract class _Paths {
@@ -27,4 +28,5 @@ abstract class _Paths {
   static const REGISTER = '/register';
   static const REGISTER_OTP_VERIFICATION = '/register-otp-verification';
   static const REGISTER_SUCCESS = '/register-success';
+  static const INSPECTION_RESULT = '/inspection-result';
 }

@@ -8,6 +8,8 @@ import '../modules/forget_password/bindings/forget_password_binding.dart';
 import '../modules/forget_password/views/forget_password_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/inspection_result/bindings/inspection_result_binding.dart';
+import '../modules/inspection_result/views/inspection_result_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/password_otp_verification/bindings/password_otp_verification_binding.dart';
@@ -78,6 +80,11 @@ class AppPages {
       name: _Paths.REGISTER_SUCCESS,
       page: () => const RegisterSuccessView(),
       binding: RegisterSuccessBinding(),
+    ),
+    GetPage(
+      name: _Paths.INSPECTION_RESULT,
+      page: () => const InspectionResultView(),
+      binding: InspectionResultBinding(),
     ),
   ];
 }
