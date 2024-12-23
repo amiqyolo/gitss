@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/forget_password/bindings/forget_password_binding.dart';
+import '../modules/forget_password/views/forget_password_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.LOGIN,
       page: () => const LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: _Paths.FORGET_PASSWORD,
+      page: () => const ForgetPasswordView(),
+      binding: ForgetPasswordBinding(),
     ),
   ];
 }
