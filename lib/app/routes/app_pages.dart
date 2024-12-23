@@ -14,6 +14,8 @@ import '../modules/password_otp_verification/bindings/password_otp_verification_
 import '../modules/password_otp_verification/views/password_otp_verification_view.dart';
 import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
+import '../modules/register_otp_verification/bindings/register_otp_verification_binding.dart';
+import '../modules/register_otp_verification/views/register_otp_verification_view.dart';
 import '../modules/splash_screen/bindings/splash_screen_binding.dart';
 import '../modules/splash_screen/views/splash_screen_view.dart';
 
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.REGISTER,
       page: () => const RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.REGISTER_OTP_VERIFICATION,
+      page: () => const RegisterOtpVerificationView(),
+      binding: RegisterOtpVerificationBinding(),
     ),
   ];
 }
