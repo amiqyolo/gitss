@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
+import 'package:gitss/app/modules/forget_password/views/forget_password_view.dart';
 import 'package:gitss/app/modules/home/views/home_view.dart';
+import 'package:gitss/app/routes/app_pages.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -138,7 +140,7 @@ class LoginView extends GetView<LoginController> {
                         const SizedBox(height: 8.0),
                         InkWell(
                           onTap: () {
-                            // Get.to(() => ForgetPasswordScreen());
+                            Get.toNamed(Routes.FORGET_PASSWORD);
                           },
                           child: const Align(
                             alignment: Alignment.centerRight,
@@ -161,7 +163,7 @@ class LoginView extends GetView<LoginController> {
                             minimumSize: const Size(double.infinity, 48),
                           ),
                           onPressed: () {
-                            Get.to(() => HomeView());
+                            Get.offAllNamed(Routes.HOME);
                           },
                           child: const Text(
                             'Masuk',
@@ -189,7 +191,7 @@ class LoginView extends GetView<LoginController> {
                       const SizedBox(width: 12.0),
                       InkWell(
                         onTap: () {
-                          // Get.to(() => RegisterScreen());
+                          Get.toNamed(Routes.REGISTER);
                         },
                         child: const Align(
                           alignment: Alignment.centerRight,

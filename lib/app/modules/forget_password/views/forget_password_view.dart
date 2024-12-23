@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
+import 'package:gitss/app/modules/password_otp_verification/views/password_otp_verification_view.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/forget_password_controller.dart';
 
 class ForgetPasswordView extends GetView<ForgetPasswordController> {
@@ -103,7 +105,7 @@ class ForgetPasswordView extends GetView<ForgetPasswordController> {
                             minimumSize: const Size(double.infinity, 48),
                           ),
                           onPressed: () {
-                            // Get.to(() => PasswordOtpVerificationScreen());
+                            Get.toNamed(Routes.PASSWORD_OTP_VERIFICATION);
                           },
                           child: const Text(
                             'Minta OTP',
@@ -131,7 +133,7 @@ class ForgetPasswordView extends GetView<ForgetPasswordController> {
                       const SizedBox(width: 12.0),
                       InkWell(
                         onTap: () {
-                          // Get.to(() => RegisterScreen());
+                          Get.toNamed(Routes.REGISTER);
                         },
                         child: const Align(
                           alignment: Alignment.centerRight,

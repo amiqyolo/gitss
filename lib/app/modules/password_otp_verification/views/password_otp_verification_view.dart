@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:gitss/app/modules/change_password/views/change_password_view.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/password_otp_verification_controller.dart';
 
 class PasswordOtpVerificationView
@@ -234,7 +235,7 @@ class PasswordOtpVerificationView
                             minimumSize: const Size(double.infinity, 48),
                           ),
                           onPressed: () {
-                            // Get.to(() => ChangePasswordView());
+                            Get.toNamed(Routes.CHANGE_PASSWORD);
                           },
                           child: const Text(
                             'Kirim OTP',

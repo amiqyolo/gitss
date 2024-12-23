@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
+import 'package:gitss/app/modules/change_password_success/views/change_password_success_view.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/change_password_controller.dart';
 
 class ChangePasswordView extends GetView<ChangePasswordController> {
@@ -104,7 +106,7 @@ class ChangePasswordView extends GetView<ChangePasswordController> {
                             minimumSize: const Size(double.infinity, 48),
                           ),
                           onPressed: () {
-                            // Get.to(() => ChangePasswordSuccessScreen());
+                            Get.toNamed(Routes.CHANGE_PASSWORD_SUCCESS);
                           },
                           child: const Text(
                             'Kirim',

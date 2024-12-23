@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:gitss/app/modules/home/views/home_view.dart';
+import 'package:gitss/app/modules/login/views/login_view.dart';
+import 'package:gitss/app/routes/app_pages.dart';
 
 import '../controllers/splash_screen_controller.dart';
 
@@ -11,9 +13,9 @@ class SplashScreenView extends GetView<SplashScreenController> {
   @override
   Widget build(BuildContext context) {
     Future.delayed(
-      const Duration(seconds: 2),
+      const Duration(seconds: 3),
       () {
-        Get.off(() => HomeView());
+        Get.offAndToNamed(Routes.LOGIN);
       },
     );
 

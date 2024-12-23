@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:gitss/app/modules/login/views/login_view.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/register_success_controller.dart';
 
 class RegisterSuccessView extends GetView<RegisterSuccessController> {
@@ -73,7 +74,7 @@ class RegisterSuccessView extends GetView<RegisterSuccessController> {
                             minimumSize: const Size(double.infinity, 48),
                           ),
                           onPressed: () {
-                            Get.to(() => LoginView());
+                            Get.toNamed(Routes.LOGIN);
                           },
                           child: const Text(
                             'Kembali Ke LOGIN',

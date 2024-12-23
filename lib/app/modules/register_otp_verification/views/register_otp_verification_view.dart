@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
+import 'package:gitss/app/modules/register_success/views/register_success_view.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/register_otp_verification_controller.dart';
 
 class RegisterOtpVerificationView
@@ -233,7 +235,7 @@ class RegisterOtpVerificationView
                             minimumSize: const Size(double.infinity, 48),
                           ),
                           onPressed: () {
-                            // Get.to(() => RegistrationSuccessScreen());
+                            Get.toNamed(Routes.REGISTER_SUCCESS);
                           },
                           child: const Text(
                             'Kirim OTP',

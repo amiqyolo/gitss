@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 import 'package:get/get.dart';
 import 'package:gitss/app/modules/login/views/login_view.dart';
+import 'package:gitss/app/modules/register_otp_verification/views/register_otp_verification_view.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/register_controller.dart';
 
 class RegisterView extends GetView<RegisterController> {
   const RegisterView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
@@ -183,7 +185,7 @@ class RegisterView extends GetView<RegisterController> {
                             minimumSize: const Size(double.infinity, 48),
                           ),
                           onPressed: () {
-                            // Get.to(() => RegisterOtpVerificationScreen());
+                            Get.toNamed(Routes.REGISTER_OTP_VERIFICATION);
                           },
                           child: const Text(
                             'Daftar',
@@ -211,7 +213,7 @@ class RegisterView extends GetView<RegisterController> {
                       const SizedBox(width: 12.0),
                       InkWell(
                         onTap: () {
-                          Get.to(() => LoginView());
+                          Get.toNamed(Routes.LOGIN);
                         },
                         child: const Align(
                           alignment: Alignment.centerRight,
