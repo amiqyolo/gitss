@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:gitss/app/routes/app_pages.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -139,7 +140,9 @@ class HomeView extends GetView<HomeController> {
                     ),
                     InkWell(
                       borderRadius: BorderRadius.circular(12.0),
-                      onTap: () {},
+                      onTap: () {
+                        Get.toNamed(Routes.INSPECTION_RESULT, arguments: menus[index]);
+                      },
                       child: Ink(
                         padding: EdgeInsets.all(14.0),
                         decoration: BoxDecoration(
