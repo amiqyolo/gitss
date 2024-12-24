@@ -24,6 +24,7 @@ abstract class Routes {
   static const VOLUME_FEATURE = _Paths.VOLUME_FEATURE;
   static const MICROPHONE_FEATURE = _Paths.MICROPHONE_FEATURE;
   static const VIBRATION_FEATURE = _Paths.VIBRATION_FEATURE;
+  static const WIFI_CONNCETION_FEATURE = _Paths.WIFI_CONNCETION_FEATURE;
 }
 
 abstract class _Paths {
@@ -49,4 +50,5 @@ abstract class _Paths {
   static const VOLUME_FEATURE = '/volume-feature';
   static const MICROPHONE_FEATURE = '/microphone-feature';
   static const VIBRATION_FEATURE = '/vibration-feature';
+  static const WIFI_CONNCETION_FEATURE = '/wifi-conncetion-feature';
 }

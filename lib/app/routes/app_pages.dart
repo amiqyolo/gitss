@@ -40,6 +40,8 @@ import '../modules/vibration_feature/bindings/vibration_feature_binding.dart';
 import '../modules/vibration_feature/views/vibration_feature_view.dart';
 import '../modules/volume_feature/bindings/volume_feature_binding.dart';
 import '../modules/volume_feature/views/volume_feature_view.dart';
+import '../modules/wifi_conncetion_feature/bindings/wifi_conncetion_feature_binding.dart';
+import '../modules/wifi_conncetion_feature/views/wifi_conncetion_feature_view.dart';
 
 part 'app_routes.dart';
 
@@ -148,6 +150,11 @@ class AppPages {
       name: _Paths.VIBRATION_FEATURE,
       page: () => const VibrationFeatureView(),
       binding: VibrationFeatureBinding(),
+    ),
+    GetPage(
+      name: _Paths.WIFI_CONNCETION_FEATURE,
+      page: () => const WifiConncetionFeatureView(),
+      binding: WifiConncetionFeatureBinding(),
     ),
   ];
 }

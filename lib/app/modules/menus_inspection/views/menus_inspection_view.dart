@@ -193,7 +193,7 @@ class MenusInspectionView extends GetView<MenusInspectionController> {
                     ),
                     FeatureButton(
                       label: 'Access WI-FI Connectivity',
-                      onTap: () => Get.to(() => const MenusInspectionView()),
+                      onTap: () => Get.toNamed(Routes.WIFI_CONNCETION_FEATURE),
                     ),
                     FeatureButton(
                       label: 'Access Android Rooted',
