@@ -20,6 +20,7 @@ abstract class Routes {
   static const SENSOR_FEATURE = _Paths.SENSOR_FEATURE;
   static const TOUCHSCREEN_FEATURE = _Paths.TOUCHSCREEN_FEATURE;
   static const FLASHLIGHT_FEATURE = _Paths.FLASHLIGHT_FEATURE;
+  static const VOLUME_FEATURE = _Paths.VOLUME_FEATURE;
 }
 
 abstract class _Paths {
@@ -41,4 +42,5 @@ abstract class _Paths {
   static const SENSOR_FEATURE = '/sensor-feature';
   static const TOUCHSCREEN_FEATURE = '/touchscreen-feature';
   static const FLASHLIGHT_FEATURE = '/flashlight-feature';
+  static const VOLUME_FEATURE = '/volume-feature';
 }
