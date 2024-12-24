@@ -214,7 +214,7 @@ class MenusInspectionView extends GetView<MenusInspectionController> {
                       padding: WidgetStatePropertyAll(EdgeInsets.all(10.0)),
                     ),
                     onPressed: () {
-                      // Get.to(() => ResultsScreen());
+                      Get.toNamed(Routes.INSPECTION_DETAIL_FEATURE);
                     },
                     child: const Text(
                       'KIRIM HASIL INSPEKSI',

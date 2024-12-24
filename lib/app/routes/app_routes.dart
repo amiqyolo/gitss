@@ -28,6 +28,7 @@ abstract class Routes {
   static const ROOTED_FEATURE = _Paths.ROOTED_FEATURE;
   static const SIM_CARD_FEATURE = _Paths.SIM_CARD_FEATURE;
   static const DEVICE_INFO_FEATURE = _Paths.DEVICE_INFO_FEATURE;
+  static const INSPECTION_DETAIL_FEATURE = _Paths.INSPECTION_DETAIL_FEATURE;
 }
 
 abstract class _Paths {
@@ -57,4 +58,5 @@ abstract class _Paths {
   static const ROOTED_FEATURE = '/rooted-feature';
   static const SIM_CARD_FEATURE = '/sim-card-feature';
   static const DEVICE_INFO_FEATURE = '/device-info-feature';
+  static const INSPECTION_DETAIL_FEATURE = '/inspection-detail-feature';
 }

@@ -16,6 +16,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/input_inspection/bindings/input_inspection_binding.dart';
 import '../modules/input_inspection/views/input_inspection_view.dart';
+import '../modules/inspection_detail_feature/bindings/inspection_detail_feature_binding.dart';
+import '../modules/inspection_detail_feature/views/inspection_detail_feature_view.dart';
 import '../modules/inspection_result/bindings/inspection_result_binding.dart';
 import '../modules/inspection_result/views/inspection_result_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -176,6 +178,11 @@ class AppPages {
       name: _Paths.DEVICE_INFO_FEATURE,
       page: () => const DeviceInfoFeatureView(),
       binding: DeviceInfoFeatureBinding(),
+    ),
+    GetPage(
+      name: _Paths.INSPECTION_DETAIL_FEATURE,
+      page: () => const InspectionDetailFeatureView(),
+      binding: InspectionDetailFeatureBinding(),
     ),
   ];
 }
