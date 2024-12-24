@@ -16,6 +16,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/input_inspection/bindings/input_inspection_binding.dart';
 import '../modules/input_inspection/views/input_inspection_view.dart';
+import '../modules/inspection_close_feature/bindings/inspection_close_feature_binding.dart';
+import '../modules/inspection_close_feature/views/inspection_close_feature_view.dart';
 import '../modules/inspection_detail_feature/bindings/inspection_detail_feature_binding.dart';
 import '../modules/inspection_detail_feature/views/inspection_detail_feature_view.dart';
 import '../modules/inspection_result/bindings/inspection_result_binding.dart';
@@ -183,6 +185,11 @@ class AppPages {
       name: _Paths.INSPECTION_DETAIL_FEATURE,
       page: () => const InspectionDetailFeatureView(),
       binding: InspectionDetailFeatureBinding(),
+    ),
+    GetPage(
+      name: _Paths.INSPECTION_CLOSE_FEATURE,
+      page: () => const InspectionCloseFeatureView(),
+      binding: InspectionCloseFeatureBinding(),
     ),
   ];
 }

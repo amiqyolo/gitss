@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:gitss/app/routes/app_pages.dart';
 
 import '../controllers/inspection_detail_feature_controller.dart';
 
@@ -212,7 +213,7 @@ class InspectionDetailFeatureView
                   padding: WidgetStatePropertyAll(EdgeInsets.symmetric(vertical: 14.0),),
                 ),
                 onPressed: () {
-                  // Get.offAll(() => ClosedScreen());
+                  Get.offAllNamed(Routes.INSPECTION_CLOSE_FEATURE);
                 },
                 child: Text(
                   'KIRIM HASIL INSPEKSI',
