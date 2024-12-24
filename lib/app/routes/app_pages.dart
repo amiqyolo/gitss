@@ -6,6 +6,8 @@ import '../modules/change_password/bindings/change_password_binding.dart';
 import '../modules/change_password/views/change_password_view.dart';
 import '../modules/change_password_success/bindings/change_password_success_binding.dart';
 import '../modules/change_password_success/views/change_password_success_view.dart';
+import '../modules/flashlight_feature/bindings/flashlight_feature_binding.dart';
+import '../modules/flashlight_feature/views/flashlight_feature_view.dart';
 import '../modules/forget_password/bindings/forget_password_binding.dart';
 import '../modules/forget_password/views/forget_password_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -120,6 +122,11 @@ class AppPages {
       name: _Paths.TOUCHSCREEN_FEATURE,
       page: () => const TouchscreenFeatureView(),
       binding: TouchscreenFeatureBinding(),
+    ),
+    GetPage(
+      name: _Paths.FLASHLIGHT_FEATURE,
+      page: () => const FlashlightFeatureView(),
+      binding: FlashlightFeatureBinding(),
     ),
   ];
 }
