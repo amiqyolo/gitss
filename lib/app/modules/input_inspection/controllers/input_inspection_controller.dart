@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:gitss/app/routes/app_pages.dart';
 
 import '../../../models/inspection/user_info.dart';
 
@@ -46,7 +47,8 @@ class InputInspectionController extends GetxController {
 
     // Simulasi request server
     await Future.delayed(const Duration(seconds: 2));
-    Get.snackbar("Success", "Data berhasil diupdate!");
+    // Get.snackbar("Success", "Data berhasil diupdate!");
+    Get.toNamed(Routes.MENUS_INSPECTION);
   }
 
   String generateUserId(UserInfo userInfo) {
