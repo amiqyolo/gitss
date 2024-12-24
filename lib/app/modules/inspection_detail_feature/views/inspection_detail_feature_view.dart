@@ -174,38 +174,38 @@ class InspectionDetailFeatureView
                 ),
               ),
               SizedBox(height: 10.0),
-              Obx(
-                    () {
-                  return ListView(
-                    physics: BouncingScrollPhysics(),
-                    shrinkWrap: true,
-                    children: controller.inspectionResults.entries.map((entry) {
-                      return Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              entry.key,
-                              style: TextStyle(
-                                color: Colors.blue,
-                                fontSize: 16,
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Text(
-                              entry.value,
-                              style: TextStyle(
-                                color: Colors.blue,
-                                fontSize: 16,
-                              ),
-                            ),
-                          ),
-                        ],
-                      );
-                    }).toList(),
-                  );
-                },
-              ),
+              // Obx(
+              //       () {
+              //     return ListView(
+              //       physics: BouncingScrollPhysics(),
+              //       shrinkWrap: true,
+              //       children: controller.inspectionResults.entries.map((entry) {
+              //         return Row(
+              //           children: [
+              //             Expanded(
+              //               child: Text(
+              //                 entry.key,
+              //                 style: TextStyle(
+              //                   color: Colors.blue,
+              //                   fontSize: 16,
+              //                 ),
+              //               ),
+              //             ),
+              //             Expanded(
+              //               child: Text(
+              //                 entry.value,
+              //                 style: TextStyle(
+              //                   color: Colors.blue,
+              //                   fontSize: 16,
+              //                 ),
+              //               ),
+              //             ),
+              //           ],
+              //         );
+              //       }).toList(),
+              //     );
+              //   },
+              // ),
               SizedBox(height: 50.0),
               ElevatedButton(
                 style: ButtonStyle(
