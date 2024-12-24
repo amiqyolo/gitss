@@ -1,7 +1,11 @@
 package com.shiffumediatek.gitss
 
+import android.content.Context
+import android.content.pm.PackageManager
 import android.hardware.Sensor
 import android.hardware.SensorManager
+import android.os.Build
+import android.telephony.TelephonyManager
 import com.scottyab.rootbeer.RootBeer
 import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -19,6 +23,23 @@ class MainActivity : FlutterFragmentActivity() {
             when (call.method) {
                 NATIVE_EVENT_SENSORS_AVAILABLE -> sensorChecker(result)
                 NATIVE_EVENT_ROOT_CHECKER -> result.success(RootBeer(applicationContext).isRooted)
+                NATIVE_EVENT_SIM_CARD_SLOTS -> {
+                    if (!hasPhonePermission()) {
+                        result.error("PERMISSION_DENIED", "Phone permission is not granted", null)
+                        return@setMethodCallHandler
+                    }
+                    val telephonyManager =
+                        getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
+                    @Suppress("DEPRECATION")
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                        val simCount = telephonyManager.activeModemCount
+                        result.success(simCount)
+                    } else {
+                        val simCount = telephonyManager.phoneCount
+                        result.success(simCount)
+                    }
+                }
+
                 else -> result.notImplemented()
             }
         }
@@ -49,6 +70,16 @@ class MainActivity : FlutterFragmentActivity() {
         }
 
         result.success(data)
+    }
+
+    private fun hasPhonePermission(): Boolean {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            // API 30+ : Check for READ_PHONE_NUMBERS
+            checkSelfPermission(android.Manifest.permission.READ_PHONE_NUMBERS) == PackageManager.PERMISSION_GRANTED
+        } else {
+            // API <30: Check for READ_PHONE_STATE
+            checkSelfPermission(android.Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED
+        }
     }
 
     companion object {

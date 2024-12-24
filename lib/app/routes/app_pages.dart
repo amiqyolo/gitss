@@ -34,6 +34,8 @@ import '../modules/rooted_feature/bindings/rooted_feature_binding.dart';
 import '../modules/rooted_feature/views/rooted_feature_view.dart';
 import '../modules/sensor_feature/bindings/sensor_feature_binding.dart';
 import '../modules/sensor_feature/views/sensor_feature_view.dart';
+import '../modules/sim_card_feature/bindings/sim_card_feature_binding.dart';
+import '../modules/sim_card_feature/views/sim_card_feature_view.dart';
 import '../modules/splash_screen/bindings/splash_screen_binding.dart';
 import '../modules/splash_screen/views/splash_screen_view.dart';
 import '../modules/touchscreen_feature/bindings/touchscreen_feature_binding.dart';
@@ -162,6 +164,11 @@ class AppPages {
       name: _Paths.ROOTED_FEATURE,
       page: () => const RootedFeatureView(),
       binding: RootedFeatureBinding(),
+    ),
+    GetPage(
+      name: _Paths.SIM_CARD_FEATURE,
+      page: () => const SimCardFeatureView(),
+      binding: SimCardFeatureBinding(),
     ),
   ];
 }
