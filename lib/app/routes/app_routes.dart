@@ -18,6 +18,7 @@ abstract class Routes {
   static const MENUS_INSPECTION = _Paths.MENUS_INSPECTION;
   static const CAMERA_FEATURE = _Paths.CAMERA_FEATURE;
   static const SENSOR_FEATURE = _Paths.SENSOR_FEATURE;
+  static const TOUCHSCREEN_FEATURE = _Paths.TOUCHSCREEN_FEATURE;
 }
 
 abstract class _Paths {
@@ -37,4 +38,5 @@ abstract class _Paths {
   static const MENUS_INSPECTION = '/menus-inspection';
   static const CAMERA_FEATURE = '/camera-feature';
   static const SENSOR_FEATURE = '/sensor-feature';
+  static const TOUCHSCREEN_FEATURE = '/touchscreen-feature';
 }
