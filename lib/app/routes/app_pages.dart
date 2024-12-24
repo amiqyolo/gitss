@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/camera_feature/bindings/camera_feature_binding.dart';
+import '../modules/camera_feature/views/camera_feature_view.dart';
 import '../modules/change_password/bindings/change_password_binding.dart';
 import '../modules/change_password/views/change_password_view.dart';
 import '../modules/change_password_success/bindings/change_password_success_binding.dart';
@@ -99,6 +101,11 @@ class AppPages {
       name: _Paths.MENUS_INSPECTION,
       page: () => const MenusInspectionView(),
       binding: MenusInspectionBinding(),
+    ),
+    GetPage(
+      name: _Paths.CAMERA_FEATURE,
+      page: () => const CameraFeatureView(),
+      binding: CameraFeatureBinding(),
     ),
   ];
 }

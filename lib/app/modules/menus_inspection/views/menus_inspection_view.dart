@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
+import 'package:gitss/app/modules/camera_feature/views/camera_feature_view.dart';
+import 'package:gitss/app/routes/app_pages.dart';
 
 import '../../widgets/feature_button.dart';
 import '../controllers/menus_inspection_controller.dart';
 
 class MenusInspectionView extends GetView<MenusInspectionController> {
   const MenusInspectionView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -159,7 +161,7 @@ class MenusInspectionView extends GetView<MenusInspectionController> {
                     const SizedBox(height: 20.0),
                     FeatureButton(
                       label: 'Access Camera',
-                      onTap: () => Get.to(() => const MenusInspectionView()),
+                      onTap: () => Get.toNamed(Routes.CAMERA_FEATURE),
                     ),
                     FeatureButton(
                       label: 'Access Sensors',

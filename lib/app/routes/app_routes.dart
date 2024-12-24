@@ -16,6 +16,7 @@ abstract class Routes {
   static const INSPECTION_RESULT = _Paths.INSPECTION_RESULT;
   static const INPUT_INSPECTION = _Paths.INPUT_INSPECTION;
   static const MENUS_INSPECTION = _Paths.MENUS_INSPECTION;
+  static const CAMERA_FEATURE = _Paths.CAMERA_FEATURE;
 }
 
 abstract class _Paths {
@@ -33,4 +34,5 @@ abstract class _Paths {
   static const INSPECTION_RESULT = '/inspection-result';
   static const INPUT_INSPECTION = '/input-inspection';
   static const MENUS_INSPECTION = '/menus-inspection';
+  static const CAMERA_FEATURE = '/camera-feature';
 }
