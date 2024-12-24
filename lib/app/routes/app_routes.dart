@@ -21,6 +21,7 @@ abstract class Routes {
   static const TOUCHSCREEN_FEATURE = _Paths.TOUCHSCREEN_FEATURE;
   static const FLASHLIGHT_FEATURE = _Paths.FLASHLIGHT_FEATURE;
   static const VOLUME_FEATURE = _Paths.VOLUME_FEATURE;
+  static const MICROPHONE_FEATURE = _Paths.MICROPHONE_FEATURE;
 }
 
 abstract class _Paths {
@@ -43,4 +44,5 @@ abstract class _Paths {
   static const TOUCHSCREEN_FEATURE = '/touchscreen-feature';
   static const FLASHLIGHT_FEATURE = '/flashlight-feature';
   static const VOLUME_FEATURE = '/volume-feature';
+  static const MICROPHONE_FEATURE = '/microphone-feature';
 }

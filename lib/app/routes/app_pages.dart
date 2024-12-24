@@ -20,6 +20,8 @@ import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/menus_inspection/bindings/menus_inspection_binding.dart';
 import '../modules/menus_inspection/views/menus_inspection_view.dart';
+import '../modules/microphone_feature/bindings/microphone_feature_binding.dart';
+import '../modules/microphone_feature/views/microphone_feature_view.dart';
 import '../modules/password_otp_verification/bindings/password_otp_verification_binding.dart';
 import '../modules/password_otp_verification/views/password_otp_verification_view.dart';
 import '../modules/register/bindings/register_binding.dart';
@@ -134,6 +136,11 @@ class AppPages {
       name: _Paths.VOLUME_FEATURE,
       page: () => const VolumeFeatureView(),
       binding: VolumeFeatureBinding(),
+    ),
+    GetPage(
+      name: _Paths.MICROPHONE_FEATURE,
+      page: () => const MicrophoneFeatureView(),
+      binding: MicrophoneFeatureBinding(),
     ),
   ];
 }

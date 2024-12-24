@@ -185,7 +185,7 @@ class MenusInspectionView extends GetView<MenusInspectionController> {
                     ),
                     FeatureButton(
                       label: 'Access Microphone',
-                      onTap: () => Get.to(() => const MenusInspectionView()),
+                      onTap: () => Get.toNamed(Routes.MICROPHONE_FEATURE),
                     ),
                     FeatureButton(
                       label: 'Access Vibration',
