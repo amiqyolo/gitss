@@ -36,6 +36,8 @@ import '../modules/splash_screen/bindings/splash_screen_binding.dart';
 import '../modules/splash_screen/views/splash_screen_view.dart';
 import '../modules/touchscreen_feature/bindings/touchscreen_feature_binding.dart';
 import '../modules/touchscreen_feature/views/touchscreen_feature_view.dart';
+import '../modules/vibration_feature/bindings/vibration_feature_binding.dart';
+import '../modules/vibration_feature/views/vibration_feature_view.dart';
 import '../modules/volume_feature/bindings/volume_feature_binding.dart';
 import '../modules/volume_feature/views/volume_feature_view.dart';
 
@@ -141,6 +143,11 @@ class AppPages {
       name: _Paths.MICROPHONE_FEATURE,
       page: () => const MicrophoneFeatureView(),
       binding: MicrophoneFeatureBinding(),
+    ),
+    GetPage(
+      name: _Paths.VIBRATION_FEATURE,
+      page: () => const VibrationFeatureView(),
+      binding: VibrationFeatureBinding(),
     ),
   ];
 }

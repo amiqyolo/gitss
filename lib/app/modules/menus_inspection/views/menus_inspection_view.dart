@@ -189,7 +189,7 @@ class MenusInspectionView extends GetView<MenusInspectionController> {
                     ),
                     FeatureButton(
                       label: 'Access Vibration',
-                      onTap: () => Get.to(() => const MenusInspectionView()),
+                      onTap: () => Get.toNamed(Routes.VIBRATION_FEATURE),
                     ),
                     FeatureButton(
                       label: 'Access WI-FI Connectivity',

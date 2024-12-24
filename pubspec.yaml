@@ -44,6 +44,7 @@ dependencies:
   volume_controller: ^2.0.8
   flutter_sound: ^9.17.8
   permission_handler: ^11.3.1
+  vibration: ^2.0.1
 
 dev_dependencies:
   flutter_test:

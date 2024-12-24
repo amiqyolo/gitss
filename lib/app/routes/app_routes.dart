@@ -3,6 +3,7 @@ part of 'app_pages.dart';
 
 abstract class Routes {
   Routes._();
+
   static const SPLASH_SCREEN = _Paths.SPLASH_SCREEN;
   static const HOME = _Paths.HOME;
   static const LOGIN = _Paths.LOGIN;
@@ -22,10 +23,12 @@ abstract class Routes {
   static const FLASHLIGHT_FEATURE = _Paths.FLASHLIGHT_FEATURE;
   static const VOLUME_FEATURE = _Paths.VOLUME_FEATURE;
   static const MICROPHONE_FEATURE = _Paths.MICROPHONE_FEATURE;
+  static const VIBRATION_FEATURE = _Paths.VIBRATION_FEATURE;
 }
 
 abstract class _Paths {
   _Paths._();
+
   static const SPLASH_SCREEN = '/splash-screen';
   static const HOME = '/home';
   static const LOGIN = '/login';
@@ -45,4 +48,5 @@ abstract class _Paths {
   static const FLASHLIGHT_FEATURE = '/flashlight-feature';
   static const VOLUME_FEATURE = '/volume-feature';
   static const MICROPHONE_FEATURE = '/microphone-feature';
+  static const VIBRATION_FEATURE = '/vibration-feature';
 }
