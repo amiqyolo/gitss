@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gitss/app/modules/camera_feature/views/camera_feature_view.dart';
 import 'package:gitss/app/routes/app_pages.dart';
 
 import '../../widgets/feature_button.dart';
@@ -177,7 +176,7 @@ class MenusInspectionView extends GetView<MenusInspectionController> {
                     ),
                     FeatureButton(
                       label: 'Access Device Info',
-                      onTap: () => Get.to(() => const MenusInspectionView()),
+                      onTap: () => Get.toNamed(Routes.DEVICE_INFO_FEATURE),
                     ),
                     FeatureButton(
                       label: 'Access Volume',

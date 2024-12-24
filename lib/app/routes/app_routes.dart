@@ -27,6 +27,7 @@ abstract class Routes {
   static const WIFI_CONNCETION_FEATURE = _Paths.WIFI_CONNCETION_FEATURE;
   static const ROOTED_FEATURE = _Paths.ROOTED_FEATURE;
   static const SIM_CARD_FEATURE = _Paths.SIM_CARD_FEATURE;
+  static const DEVICE_INFO_FEATURE = _Paths.DEVICE_INFO_FEATURE;
 }
 
 abstract class _Paths {
@@ -55,4 +56,5 @@ abstract class _Paths {
   static const WIFI_CONNCETION_FEATURE = '/wifi-conncetion-feature';
   static const ROOTED_FEATURE = '/rooted-feature';
   static const SIM_CARD_FEATURE = '/sim-card-feature';
+  static const DEVICE_INFO_FEATURE = '/device-info-feature';
 }
