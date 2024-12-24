@@ -197,7 +197,7 @@ class MenusInspectionView extends GetView<MenusInspectionController> {
                     ),
                     FeatureButton(
                       label: 'Access Android Rooted',
-                      onTap: () => Get.to(() => const MenusInspectionView()),
+                      onTap: () => Get.toNamed(Routes.ROOTED_FEATURE),
                     ),
                     FeatureButton(
                       label: 'Access Sim Card',

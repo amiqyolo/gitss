@@ -30,6 +30,8 @@ import '../modules/register_otp_verification/bindings/register_otp_verification_
 import '../modules/register_otp_verification/views/register_otp_verification_view.dart';
 import '../modules/register_success/bindings/register_success_binding.dart';
 import '../modules/register_success/views/register_success_view.dart';
+import '../modules/rooted_feature/bindings/rooted_feature_binding.dart';
+import '../modules/rooted_feature/views/rooted_feature_view.dart';
 import '../modules/sensor_feature/bindings/sensor_feature_binding.dart';
 import '../modules/sensor_feature/views/sensor_feature_view.dart';
 import '../modules/splash_screen/bindings/splash_screen_binding.dart';
@@ -155,6 +157,11 @@ class AppPages {
       name: _Paths.WIFI_CONNCETION_FEATURE,
       page: () => const WifiConncetionFeatureView(),
       binding: WifiConncetionFeatureBinding(),
+    ),
+    GetPage(
+      name: _Paths.ROOTED_FEATURE,
+      page: () => const RootedFeatureView(),
+      binding: RootedFeatureBinding(),
     ),
   ];
 }

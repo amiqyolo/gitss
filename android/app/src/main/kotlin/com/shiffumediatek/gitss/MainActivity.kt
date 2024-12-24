@@ -2,6 +2,7 @@ package com.shiffumediatek.gitss
 
 import android.hardware.Sensor
 import android.hardware.SensorManager
+import com.scottyab.rootbeer.RootBeer
 import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
@@ -17,6 +18,7 @@ class MainActivity : FlutterFragmentActivity() {
         ).setMethodCallHandler { call, result ->
             when (call.method) {
                 NATIVE_EVENT_SENSORS_AVAILABLE -> sensorChecker(result)
+                NATIVE_EVENT_ROOT_CHECKER -> result.success(RootBeer(applicationContext).isRooted)
                 else -> result.notImplemented()
             }
         }

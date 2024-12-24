@@ -25,6 +25,7 @@ abstract class Routes {
   static const MICROPHONE_FEATURE = _Paths.MICROPHONE_FEATURE;
   static const VIBRATION_FEATURE = _Paths.VIBRATION_FEATURE;
   static const WIFI_CONNCETION_FEATURE = _Paths.WIFI_CONNCETION_FEATURE;
+  static const ROOTED_FEATURE = _Paths.ROOTED_FEATURE;
 }
 
 abstract class _Paths {
@@ -51,4 +52,5 @@ abstract class _Paths {
   static const MICROPHONE_FEATURE = '/microphone-feature';
   static const VIBRATION_FEATURE = '/vibration-feature';
   static const WIFI_CONNCETION_FEATURE = '/wifi-conncetion-feature';
+  static const ROOTED_FEATURE = '/rooted-feature';
 }
