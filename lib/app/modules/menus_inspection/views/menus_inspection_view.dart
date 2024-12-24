@@ -165,7 +165,7 @@ class MenusInspectionView extends GetView<MenusInspectionController> {
                     ),
                     FeatureButton(
                       label: 'Access Sensors',
-                      onTap: () => Get.to(() => const MenusInspectionView()),
+                      onTap: () => Get.toNamed(Routes.SENSOR_FEATURE),
                     ),
                     FeatureButton(
                       label: 'Touch Screen',
